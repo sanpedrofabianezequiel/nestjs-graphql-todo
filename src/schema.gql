@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todo {
+  id: Int!
+  description: String!
+  done: Boolean!
+}
+
+type Query {
+  """return hello world"""
+  hello: String!
+  randomNumber: Float!
+
+  """return random"""
+  randomNumberFromZeroToHundred(to: Int): Int!
+  todos: [Todo!]!
+  todo(id: Int!): Todo!
+}
